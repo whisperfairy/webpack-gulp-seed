@@ -1,6 +1,8 @@
 /**
- * Created by whisp_000 on 2016/5/22.
+ * Created by whisp_000 on 2016/6/10.
  */
+
+
 'use strict';
 var webpack = require('webpack');
 var path = require('path');
@@ -47,7 +49,7 @@ var entris = fs.readdirSync(entryPath).reduce(function (o, filename) {
     }, {}
 );
 var config = {
-    target: 'web',
+    target: 'node',
     cache: true,
     entry: entris,
     output: {
