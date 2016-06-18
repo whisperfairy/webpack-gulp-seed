@@ -41,8 +41,9 @@ if( isProduction() ) {
 }
 
 var entris = fs.readdirSync(entryPath).reduce(function (o, filename) {
-        !/\./.test(filename) &&
-        (o[filename] = './' + path.join(entryPath, filename, filename + '.jsx'));
+        /entry.js$/.test(filename) &&
+        (o[filename] = './' + path.join(entryPath, filename, filename + '.entry.js'));
+    console.log(o)
         return o;
     }, {}
 );

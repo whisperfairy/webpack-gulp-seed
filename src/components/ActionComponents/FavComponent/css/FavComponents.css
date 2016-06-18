@@ -1,0 +1,32 @@
+.Arc-tool {
+    display: flex;
+    width: 180px;
+    height: 90px;
+    background-color: #5bc0de;
+}
+
+.t-left {
+    flex:1;
+    background-color: #5cb85c;
+}
+.t-right
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+.t-right-top
+{
+    height: 45px;
+    background-color:blueviolet;
+    text-align: center;
+    line-height: 45px;
+}
+.t-right-bottom
+{
+    height: 45px;
+    background-color: coral;
+    text-align: center;
+    line-height: 45px;
+}
