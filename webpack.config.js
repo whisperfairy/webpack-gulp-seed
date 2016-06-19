@@ -41,7 +41,7 @@ if( isProduction() ) {
 }
 
 var entris = fs.readdirSync(entryPath).reduce(function (o, filename) {
-        /entry.js$/.test(filename) &&
+       !/\./.test(filename) &&
         (o[filename] = './' + path.join(entryPath, filename, filename + '.entry.js'));
     console.log(o)
         return o;
@@ -63,6 +63,8 @@ var config = {
                 loaders: ['babel?presets[]=es2015&presets[]=es2016&presets[]=stage-3'],
                 exclude: /node_modules/
             },
+            { test: /\.css$/, loader: "style!css" }
+            ,
             {
                 test: /\.scss$/,
                 loaders: ['style', 'css?root='+__dirname, 'resolve-url', 'sass']
