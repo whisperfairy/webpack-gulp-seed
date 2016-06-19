@@ -25,6 +25,8 @@
 |       |      └──Index.scss
 |          └──Index2
    ├── dist                #发布目录
+         |----dist            bundle
+         |----js              common
    ├── node_modules        #包文件夹
    ├── .gitignore     
    ├── .jshintrc      
