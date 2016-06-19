@@ -1,12 +1,12 @@
 
 'use strict';
 
-let gulp = require('gulp')
-let webpack = require('webpack')
+let gulp = require('gulp');
+let webpack = require('webpack');
 
 
 
-let webpackConf = require('./webpack.config')
+let webpackConf = require('./webpack.config');
 // let webpackDevConf = require('./webpack-dev.config')
 
 

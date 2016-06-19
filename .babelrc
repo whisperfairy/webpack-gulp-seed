@@ -1,0 +1,15 @@
+/**
+ * Created by whisp_000 on 2016/5/30.
+ */
+
+{
+    "presets": ["stage-3", "es2016"],
+    "plugins": [
+        ["transform-runtime",
+            {
+            "polyfill": false,
+            "regenerator": true
+        }
+        ]
+    ]
+}
