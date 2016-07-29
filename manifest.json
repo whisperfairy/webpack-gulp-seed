@@ -171,6 +171,7 @@
     "../node_modules/react/lib/adler32.js": 168,
     "../node_modules/react/lib/findDOMNode.js": 169,
     "../node_modules/react/lib/getHostComponentFromComposite.js": 170,
-    "../node_modules/react/lib/renderSubtreeIntoContainer.js": 171
+    "../node_modules/react/lib/renderSubtreeIntoContainer.js": 171,
+    "../node_modules/antd/dist/antd.js": 172
   }
 }
