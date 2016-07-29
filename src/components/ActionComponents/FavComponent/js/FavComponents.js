@@ -1,23 +1,14 @@
 /**
  * Created by whisper on 2016/6/18.
  */
-import {BasicActionComponent as BasicActionComponent} from '../../BasicActionComponent/BaiscActionComponent'
-require('../css/FavComponents.css');
-export class FavComponents extends BasicActionComponent
+//todo 子组件
+import React ,{ Component }from 'react';
+export class FavComponents extends Component
 {
-    constructor(...args)
+    constructor(props)
     {
-        super(args[0],args[1]);
+        super(props);
+        
     }
-    CountUp()
-    {
-            this.count++;
-        console.log( $(".fav.t-right-bottom "));
-            $(".fav.t-right-bottom").html(this.count);
-
-    }
-    draw()
-    {
-
-    }
+   
 }

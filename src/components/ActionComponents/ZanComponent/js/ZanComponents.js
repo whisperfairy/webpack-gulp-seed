@@ -1,19 +1,15 @@
 /**
  * Created by whisper on 2016/6/18.
  */
-import {BasicActionComponent} from '../../BasicActionComponent/BaiscActionComponent'
-export class ZanComponents extends BasicActionComponent
+
+import React ,{ Component }from 'react';
+ class ZanComponents extends Component
 {
-    constructor(...args)
+    constructor(props)
     {
-        super(args);
-    }
-    CountUp()
-    {
+        super(props);
 
     }
-    draw()
-    {
 
-    }
 }
+export default ZanComponents;

@@ -19,15 +19,20 @@ var entryPath = './src/views';
  *  ProvidePlugin 插件可以定义一个共用的入口，比如 下面加的 React ,他会在每个文件自动require了react，所以你在文件中不需要 require('react')，也可以使用 React。
  */
 var plugins = [
-    new webpack.optimize.CommonsChunkPlugin({
-        name: 'commons',
-        filename: 'js/commons.js',
-    }),
-    new webpack.ProvidePlugin({
-        React: 'react',
-        ReactDOM: 'react-dom',
-        reqwest: 'reqwest',
-    }),
+    // new webpack.optimize.CommonsChunkPlugin({
+    //     name: 'commons',
+    //     filename: 'js/commons.js',
+    // }),
+    // new webpack.ProvidePlugin({
+    //     React: 'react',
+    //     ReactDOM: 'react-dom',
+    //     reqwest: 'reqwest',
+    // }),
+    new webpack.DllReferencePlugin({
+            context: __dirname,
+            manifest: require('./manifest.json'),
+        }),
+    
 ];
 if( isProduction() ) {
     plugins.push(

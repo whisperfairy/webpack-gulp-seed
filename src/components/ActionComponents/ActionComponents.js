@@ -3,4 +3,5 @@
  */
 import {FavComponents} from './FavComponent/js/FavComponents'
 import {ZanComponents} from './ZanComponent/js/ZanComponents'
-export {FavComponents,ZanComponents};
+import React ,{Component} from  'react';
+//todo 父组件
